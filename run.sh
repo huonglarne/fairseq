@@ -1,14 +1,15 @@
 # Set up
 
-conda create -n fairseq python=3.8
+conda create -n faỉrseq python=3.8 -y
 
 conda activate fairseq
 
 pip install --editable ./
 pip install pyarrow
-python setup.py build_ext --inplace
 
-update-moreh --force --torch 1.13.1
+# update-moreh --force --torch 1.13.1
+
+python setup.py build_ext --inplace
 
 
 # Preprocess data
