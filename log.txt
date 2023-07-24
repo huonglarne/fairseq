@@ -1,0 +1,135 @@
+/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/_M/driver/common/utils.py:2091: UserWarning: torch.triangular_solve is deprecated in favor of torch.linalg.solve_triangularand will be removed in a future PyTorch release.
+torch.linalg.solve_triangular has its arguments reversed and does not return a copy of one of the inputs.
+X = torch.triangular_solve(B, A).solution
+should be replaced with
+X = torch.linalg.solve_triangular(A, B). (Triggered internally at ../aten/src/ATen/native/BatchLinearAlgebra.cpp:2115.)
+  'triangular_solve': type(dummy_tensor.triangular_solve(dummy_tensor)),
+2023-07-24 13:28:05 | INFO | torch.distributed.nn.jit.instantiator | Created a temporary directory at /tmp/tmpz6tqeux8
+2023-07-24 13:28:05 | INFO | torch.distributed.nn.jit.instantiator | Writing /tmp/tmpz6tqeux8/_remote_module_non_scriptable.py
+[2023-07-24 13:28:18.962] [info] Requesting resources for KT AI Accelerator from the server...
+[2023-07-24 13:28:19.979] [info] Initializing the worker daemon for KT AI Accelerator
+[2023-07-24 13:28:21.603] [info] [1/1] Connecting to resources on the server (192.168.110.2:24159)...
+[2023-07-24 13:28:21.612] [info] Establishing links to the resources...
+[2023-07-24 13:28:21.712] [info] KT AI Accelerator is ready to use.
+2023-07-24 13:28:24 | INFO | fairseq.tasks.text_to_speech | Please install tensorboardX: pip install tensorboardX
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | {'_name': None, 'common': {'_name': None, 'no_progress_bar': False, 'log_interval': 100, 'log_format': None, 'log_file': None, 'aim_repo': None, 'aim_run_hash': None, 'tensorboard_logdir': None, 'wandb_project': None, 'azureml_logging': False, 'seed': 1, 'cpu': False, 'tpu': False, 'bf16': False, 'memory_efficient_bf16': False, 'fp16': False, 'memory_efficient_fp16': False, 'fp16_no_flatten_grads': False, 'fp16_init_scale': 128, 'fp16_scale_window': None, 'fp16_scale_tolerance': 0.0, 'on_cpu_convert_precision': False, 'min_loss_scale': 0.0001, 'threshold_loss_scale': None, 'amp': False, 'amp_batch_retries': 2, 'amp_init_scale': 128, 'amp_scale_window': None, 'user_dir': None, 'empty_cache_freq': 0, 'all_gather_list_size': 16384, 'model_parallel_size': 1, 'quantization_config_path': None, 'profile': False, 'reset_logging': False, 'suppress_crashes': False, 'use_plasma_view': False, 'plasma_path': '/tmp/plasma'}, 'common_eval': {'_name': None, 'path': None, 'post_process': None, 'quiet': False, 'model_overrides': '{}', 'results_path': None}, 'distributed_training': {'_name': None, 'distributed_world_size': 1, 'distributed_num_procs': 1, 'distributed_rank': 0, 'distributed_backend': 'nccl', 'distributed_init_method': None, 'distributed_port': -1, 'device_id': 0, 'distributed_no_spawn': False, 'ddp_backend': 'pytorch_ddp', 'ddp_comm_hook': 'none', 'bucket_cap_mb': 25, 'fix_batches_to_gpus': False, 'find_unused_parameters': False, 'gradient_as_bucket_view': False, 'fast_stat_sync': False, 'heartbeat_timeout': -1, 'broadcast_buffers': False, 'slowmo_momentum': None, 'slowmo_base_algorithm': 'localsgd', 'localsgd_frequency': 3, 'nprocs_per_node': 1, 'pipeline_model_parallel': False, 'pipeline_balance': None, 'pipeline_devices': None, 'pipeline_chunks': 0, 'pipeline_encoder_balance': None, 'pipeline_encoder_devices': None, 'pipeline_decoder_balance': None, 'pipeline_decoder_devices': None, 'pipeline_checkpoint': 'never', 'zero_sharding': 'none', 'fp16': False, 'memory_efficient_fp16': False, 'tpu': False, 'no_reshard_after_forward': False, 'fp32_reduce_scatter': False, 'cpu_offload': False, 'use_sharded_state': False, 'not_fsdp_flatten_parameters': False}, 'dataset': {'_name': None, 'num_workers': 1, 'skip_invalid_size_inputs_valid_test': False, 'max_tokens': 4000, 'batch_size': None, 'required_batch_size_multiple': 8, 'required_seq_len_multiple': 1, 'dataset_impl': None, 'data_buffer_size': 10, 'train_subset': 'train', 'valid_subset': 'valid', 'combine_valid_subsets': None, 'ignore_unused_valid_subsets': False, 'validate_interval': 1, 'validate_interval_updates': 0, 'validate_after_updates': 0, 'fixed_validation_seed': None, 'disable_validation': False, 'max_tokens_valid': 4000, 'batch_size_valid': None, 'max_valid_steps': None, 'curriculum': 0, 'gen_subset': 'test', 'num_shards': 1, 'shard_id': 0, 'grouped_shuffling': False, 'update_epoch_batch_itr': False, 'update_ordered_indices_seed': False}, 'optimization': {'_name': None, 'max_epoch': 0, 'max_update': 0, 'stop_time_hours': 0.0, 'clip_norm': 0.1, 'sentence_avg': False, 'update_freq': [1], 'lr': [0.25], 'stop_min_lr': -1.0, 'use_bmuf': False, 'skip_remainder_batch': False, 'debug_param_names': False}, 'checkpoint': {'_name': None, 'save_dir': 'checkpoints/fconv', 'restore_file': 'checkpoint_last.pt', 'continue_once': None, 'finetune_from_model': None, 'reset_dataloader': False, 'reset_lr_scheduler': False, 'reset_meters': False, 'reset_optimizer': False, 'optimizer_overrides': '{}', 'save_interval': 1, 'save_interval_updates': 0, 'keep_interval_updates': -1, 'keep_interval_updates_pattern': -1, 'keep_last_epochs': -1, 'keep_best_checkpoints': -1, 'no_save': False, 'no_epoch_checkpoints': False, 'no_last_checkpoints': False, 'no_save_optimizer_state': False, 'best_checkpoint_metric': 'loss', 'maximize_best_checkpoint_metric': False, 'patience': -1, 'checkpoint_suffix': '', 'checkpoint_shard_count': 1, 'load_checkpoint_on_all_dp_ranks': False, 'write_checkpoints_asynchronously': False, 'model_parallel_size': 1}, 'bmuf': {'_name': None, 'block_lr': 1.0, 'block_momentum': 0.875, 'global_sync_iter': 50, 'warmup_iterations': 500, 'use_nbm': False, 'average_sync': False, 'distributed_world_size': 1}, 'generation': {'_name': None, 'beam': 5, 'beam_mt': 0, 'nbest': 1, 'max_len_a': 0.0, 'max_len_b': 200, 'max_len_a_mt': 0.0, 'max_len_b_mt': 200, 'min_len': 1, 'match_source_len': False, 'unnormalized': False, 'no_early_stop': False, 'no_beamable_mm': False, 'lenpen': 1.0, 'lenpen_mt': 1.0, 'unkpen': 0.0, 'replace_unk': None, 'sacrebleu': False, 'score_reference': False, 'prefix_size': 0, 'no_repeat_ngram_size': 0, 'sampling': False, 'sampling_topk': -1, 'sampling_topp': -1.0, 'constraints': None, 'temperature': 1.0, 'diverse_beam_groups': -1, 'diverse_beam_strength': 0.5, 'diversity_rate': -1.0, 'print_alignment': None, 'print_step': False, 'lm_path': None, 'lm_weight': 0.0, 'iter_decode_eos_penalty': 0.0, 'iter_decode_max_iter': 10, 'iter_decode_force_max_iter': False, 'iter_decode_with_beam': 1, 'iter_decode_with_external_reranker': False, 'retain_iter_history': False, 'retain_dropout': False, 'retain_dropout_modules': None, 'decoding_format': None, 'no_seed_provided': False, 'eos_token': None}, 'eval_lm': {'_name': None, 'output_word_probs': False, 'output_word_stats': False, 'context_window': 0, 'softmax_batch': 9223372036854775807}, 'interactive': {'_name': None, 'buffer_size': 0, 'input': '-'}, 'model': Namespace(_name='fconv_iwslt_de_en', aim_repo=None, aim_run_hash=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, arch='fconv_iwslt_de_en', azureml_logging=False, batch_size=None, batch_size_valid=None, best_checkpoint_metric='loss', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', clip_norm=0.1, combine_valid_subsets=None, continue_once=None, cpu=False, cpu_offload=False, criterion='cross_entropy', curriculum=0, data='data-bin/iwslt14.tokenized.de-en', data_buffer_size=10, dataset_impl=None, ddp_backend='pytorch_ddp', ddp_comm_hook='none', debug_param_names=False, decoder_attention='True', decoder_embed_dim=256, decoder_embed_path=None, decoder_layers='[(256, 3)] * 3', decoder_out_embed_dim=256, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, dropout=0.2, ema_decay=0.9999, ema_fp32=False, ema_seed_model=None, ema_start_update=0, ema_update_freq=1, empty_cache_freq=0, encoder_embed_dim=256, encoder_embed_path=None, encoder_layers='[(256, 3)] * 4', eos=2, eval_bleu=False, eval_bleu_args='{}', eval_bleu_detok='space', eval_bleu_detok_args='{}', eval_bleu_print_samples=False, eval_bleu_remove_bpe=None, eval_tokenized_bleu=False, fast_stat_sync=False, find_unused_parameters=False, finetune_from_model=None, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, fp32_reduce_scatter=False, gen_subset='test', gradient_as_bucket_view=False, grouped_shuffling=False, heartbeat_timeout=-1, ignore_unused_valid_subsets=False, keep_best_checkpoints=-1, keep_interval_updates=-1, keep_interval_updates_pattern=-1, keep_last_epochs=-1, left_pad_source=True, left_pad_target=False, load_alignments=False, load_checkpoint_on_all_dp_ranks=False, localsgd_frequency=3, log_file=None, log_format=None, log_interval=100, lr=[0.25], lr_scheduler='fixed', lr_shrink=0.1, max_epoch=0, max_source_positions=1024, max_target_positions=1024, max_tokens=4000, max_tokens_valid=4000, max_update=0, max_valid_steps=None, maximize_best_checkpoint_metric=False, memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, momentum=0.99, no_epoch_checkpoints=False, no_last_checkpoints=False, no_progress_bar=False, no_reshard_after_forward=False, no_save=False, no_save_optimizer_state=False, no_seed_provided=False, not_fsdp_flatten_parameters=False, nprocs_per_node=1, num_batch_buckets=0, num_shards=1, num_workers=1, on_cpu_convert_precision=False, optimizer='nag', optimizer_overrides='{}', pad=1, patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, plasma_path='/tmp/plasma', profile=False, quantization_config_path=None, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=False, reset_logging=False, reset_lr_scheduler=False, reset_meters=False, reset_optimizer=False, restore_file='checkpoint_last.pt', save_dir='checkpoints/fconv', save_interval=1, save_interval_updates=0, scoring='bleu', seed=1, sentence_avg=False, shard_id=0, share_input_output_embed=False, skip_invalid_size_inputs_valid_test=False, skip_remainder_batch=False, slowmo_base_algorithm='localsgd', slowmo_momentum=None, source_lang=None, stop_min_lr=-1.0, stop_time_hours=0, store_ema=False, suppress_crashes=False, target_lang=None, task='translation', tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, tpu=False, train_subset='train', truncate_source=False, unk=3, update_epoch_batch_itr=False, update_freq=[1], update_ordered_indices_seed=False, upsample_primary=-1, use_bmuf=False, use_plasma_view=False, use_sharded_state=False, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, wandb_project=None, warmup_updates=0, weight_decay=0.0, write_checkpoints_asynchronously=False, zero_sharding='none'), 'task': {'_name': 'translation', 'data': 'data-bin/iwslt14.tokenized.de-en', 'source_lang': None, 'target_lang': None, 'load_alignments': False, 'left_pad_source': True, 'left_pad_target': False, 'max_source_positions': 1024, 'max_target_positions': 1024, 'upsample_primary': -1, 'truncate_source': False, 'num_batch_buckets': 0, 'train_subset': 'train', 'dataset_impl': None, 'required_seq_len_multiple': 1, 'eval_bleu': False, 'eval_bleu_args': '{}', 'eval_bleu_detok': 'space', 'eval_bleu_detok_args': '{}', 'eval_tokenized_bleu': False, 'eval_bleu_remove_bpe': None, 'eval_bleu_print_samples': False}, 'criterion': {'_name': 'cross_entropy', 'sentence_avg': False}, 'optimizer': {'_name': 'nag', 'momentum': 0.99, 'weight_decay': 0.0, 'lr': [0.25]}, 'lr_scheduler': {'_name': 'fixed', 'force_anneal': None, 'lr_shrink': 0.1, 'warmup_updates': 0, 'lr': [0.25]}, 'scoring': {'_name': 'bleu', 'pad': 1, 'eos': 2, 'unk': 3}, 'bpe': None, 'tokenizer': None, 'ema': {'_name': None, 'store_ema': False, 'ema_decay': 0.9999, 'ema_start_update': 0, 'ema_seed_model': None, 'ema_update_freq': 1, 'ema_fp32': False}}
+2023-07-24 13:28:26 | INFO | fairseq.tasks.translation | [de] dictionary: 8848 types
+2023-07-24 13:28:26 | INFO | fairseq.tasks.translation | [en] dictionary: 6632 types
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | FConvModel(
+  (encoder): FConvEncoder(
+    (dropout_module): FairseqDropout()
+    (embed_tokens): Embedding(8848, 256, padding_idx=1)
+    (embed_positions): LearnedPositionalEmbedding(1024, 256, padding_idx=1)
+    (fc1): Linear(in_features=256, out_features=256, bias=True)
+    (projections): ModuleList(
+      (0): None
+      (1): None
+      (2): None
+      (3): None
+    )
+    (convolutions): ModuleList(
+      (0): ConvTBC(256, 512, kernel_size=(3,), padding=(1,))
+      (1): ConvTBC(256, 512, kernel_size=(3,), padding=(1,))
+      (2): ConvTBC(256, 512, kernel_size=(3,), padding=(1,))
+      (3): ConvTBC(256, 512, kernel_size=(3,), padding=(1,))
+    )
+    (fc2): Linear(in_features=256, out_features=256, bias=True)
+  )
+  (decoder): FConvDecoder(
+    (dropout_module): FairseqDropout()
+    (embed_tokens): Embedding(6632, 256, padding_idx=1)
+    (embed_positions): LearnedPositionalEmbedding(1024, 256, padding_idx=1)
+    (fc1): Linear(in_features=256, out_features=256, bias=True)
+    (projections): ModuleList(
+      (0): None
+      (1): None
+      (2): None
+    )
+    (convolutions): ModuleList(
+      (0): LinearizedConvolution(256, 512, kernel_size=(3,), padding=(2,))
+      (1): LinearizedConvolution(256, 512, kernel_size=(3,), padding=(2,))
+      (2): LinearizedConvolution(256, 512, kernel_size=(3,), padding=(2,))
+    )
+    (attention): ModuleList(
+      (0): AttentionLayer(
+        (in_projection): Linear(in_features=256, out_features=256, bias=True)
+        (out_projection): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (1): AttentionLayer(
+        (in_projection): Linear(in_features=256, out_features=256, bias=True)
+        (out_projection): Linear(in_features=256, out_features=256, bias=True)
+      )
+      (2): AttentionLayer(
+        (in_projection): Linear(in_features=256, out_features=256, bias=True)
+        (out_projection): Linear(in_features=256, out_features=256, bias=True)
+      )
+    )
+    (fc2): Linear(in_features=256, out_features=256, bias=True)
+    (fc3): Linear(in_features=256, out_features=6632, bias=True)
+  )
+)
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | task: TranslationTask
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | model: FConvModel
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | criterion: CrossEntropyCriterion
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | num. shared model params: 9,618,384 (num. trained: 9,618,384)
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | num. expert model params: 0 (num. trained: 0)
+2023-07-24 13:28:26 | INFO | fairseq.data.data_utils | loaded 7,283 examples from: data-bin/iwslt14.tokenized.de-en/valid.de-en.de
+2023-07-24 13:28:26 | INFO | fairseq.data.data_utils | loaded 7,283 examples from: data-bin/iwslt14.tokenized.de-en/valid.de-en.en
+2023-07-24 13:28:26 | INFO | fairseq.tasks.translation | data-bin/iwslt14.tokenized.de-en valid de-en 7283 examples
+2023-07-24 13:28:26 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2023-07-24 13:28:26 | INFO | fairseq.utils | rank   0: capabilities =  0.0  ; total memory = 127.969 GB ; name = KT AI Accelerator                       
+2023-07-24 13:28:26 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | training on 1 devices (GPUs/TPUs)
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | max tokens per device = 4000 and max sentences per device = None
+2023-07-24 13:28:26 | INFO | fairseq.trainer | Preparing to load checkpoint checkpoints/fconv/checkpoint_last.pt
+2023-07-24 13:28:26 | INFO | fairseq.trainer | No existing checkpoint found checkpoints/fconv/checkpoint_last.pt
+2023-07-24 13:28:26 | INFO | fairseq.trainer | loading train data for epoch 1
+2023-07-24 13:28:26 | INFO | fairseq.data.data_utils | loaded 160,239 examples from: data-bin/iwslt14.tokenized.de-en/train.de-en.de
+2023-07-24 13:28:26 | INFO | fairseq.data.data_utils | loaded 160,239 examples from: data-bin/iwslt14.tokenized.de-en/train.de-en.en
+2023-07-24 13:28:26 | INFO | fairseq.tasks.translation | data-bin/iwslt14.tokenized.de-en train de-en 160239 examples
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | reuse_dataloader = True
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | rebuild_batches = False
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | creating new batches for epoch 1
+2023-07-24 13:28:26 | INFO | fairseq_cli.train | begin dry-run validation on "valid" subset
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | reuse_dataloader = True
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | rebuild_batches = False
+2023-07-24 13:28:26 | INFO | fairseq.tasks.fairseq_task | creating new batches for epoch 1
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/nas/.conda/envs/hf/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/nas/.conda/envs/hf/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 49, in _pin_memory_loop
+    do_one_step()
+  File "/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 26, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/nas/.conda/envs/hf/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 310, in rebuild_storage_fd
+    storage = cls._new_shared_fd_cpu(fd, size)
+AttributeError: type object 'torch.storage.TypedStorage' has no attribute '_new_shared_fd_cpu'
+Traceback (most recent call last):
+  File "/nas/.conda/envs/hf/bin/fairseq-train", line 8, in <module>
+    sys.exit(cli_main())
+  File "/nas/huong/projects/fairseq/fairseq_cli/train.py", line 576, in cli_main
+    distributed_utils.call_main(cfg, main)
+  File "/nas/huong/projects/fairseq/fairseq/distributed/utils.py", line 404, in call_main
+    main(cfg, **kwargs)
+  File "/nas/huong/projects/fairseq/fairseq_cli/train.py", line 191, in main
+    for _ in itr:
+  File "/nas/huong/projects/fairseq/fairseq/data/iterators.py", line 57, in __next__
+    x = next(self._itr)
+  File "/nas/huong/projects/fairseq/fairseq/data/iterators.py", line 747, in __next__
+    raise item
+  File "/nas/huong/projects/fairseq/fairseq/data/iterators.py", line 677, in run
+    for item in self._source:
+  File "/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 628, in __next__
+    data = self._next_data()
+  File "/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1316, in _next_data
+    idx, data = self._get_data()
+  File "/nas/.conda/envs/hf/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1277, in _get_data
+    raise RuntimeError('Pin memory thread exited unexpectedly')
+RuntimeError: Pin memory thread exited unexpectedly
